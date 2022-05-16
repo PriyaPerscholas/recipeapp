@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import Pages from './pages/Pages'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import './App.css';
-
+import Index from './components/Index';
+import Show from './components/Show';
+import New from './components/New';
+import Edit from './components/Edit';
+import Recipe from './components/Recipe';
+import Searched from './components/Searched';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <><h1><i>Recipe World</i></h1>
+      <br />
+      <Router>
+        <nav className='nav1'>
+          <Link to='/' className='li1'>Recipes from API</Link>
+          <Link to='/priyarecipes' className='li2' >Priya's Recipes</Link>
+          <Link to='/priyarecipes/new' className='li3'>Create new recipe</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Pages />} />
+          <Route path ="/searched/:search" element={<Searched/>}/>
+          <Route path="/recipe/:name" element={<Recipe />} />
+          <Route path="/priyarecipes" element={<Index />} />
+          <Route path="/priyarecipes/:id" element={<Show />} />
+          <Route path='/priyarecipes/new' element={<New />} />
+          <Route path='/priyarecipes/:id/edit' element={<Edit />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

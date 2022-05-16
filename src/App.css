@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+h1 {
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav1 {
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.li1,
+.li2,
+.li3 {
+    color: rgb(38, 37, 37);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px rgb(141, 134, 134);
+    border-radius: 6px;
+    min-width: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+legend {
+    font-size: 1.25em;
+    padding: 0 .25em;
+    color: rgb(70, 70, 70);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+.tit1,
+.tit2 {
+    padding: .5em;
+    margin: 10px;
+    border-radius: 10px;
+    width: 50%;
+    border: 1px solid #999;
+}
+
+input[type=textarea] {
+    padding: .5em;
+    margin: 10px;
+    border-radius: 15px;
+    width: 50%;
+    border: 1px solid #999;
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    padding: .5em 1em;
+    background-color: rgb(175, 163, 163);
+    color: black;
+    font-size: 1em;
+    border-radius: 6px;
+    min-height: 30px;
+    min-width: 120px;
+}
+
+.show {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 0%;
+}
+
+.show1,
+.show2 {
+    margin: 5em;
+    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #999;
+    border-radius: 6px;
+
+}
+
+.show3,
+.show4 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img {
+    max-height: 500px;
+    max-width: 400px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+button:hover {
+    background-color: rgb(233, 219, 219);
+
+}
+
+.sh {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.search{
+    margin: 2rem 25rem;
+    width:50%;
+    position: relative;
+    align-self: center;
+  
+}
+.searchform{
+    padding: .5em;
+    margin: 10px;
+    border-radius: 10px;
+    width: 50%;
+    border: 1px solid #999;
+    color:black;
+}
+.search1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem; 
+
+}
+.search2{
+    margin-top:3rem ; 
+}
+.search-img{
+    width:200px;
+    height:200px;
+    border-radius: 2px;
+    max-height:250px;
+    max-width:200px;
+    border-radius:1rem;
 }
