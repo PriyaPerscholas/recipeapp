@@ -26,7 +26,7 @@ function Recipe() {
                             <img className='img' src={details.image} />
                      </div>
                      <div className='show2'>
-                            <h3>SpoonacularInstruction</h3><br />
+                            <h3>Spoonacular Instruction</h3><br />
                             <p dangerouslySetInnerHTML={{ __html: details.instructions }}></p><br />
                      </div>
               </div >
